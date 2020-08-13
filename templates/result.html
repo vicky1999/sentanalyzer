@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sentanalyser</title>
+    <style>
+      th,td,table {
+        border:2px solid black;
+        padding: 5px;
+      }
+      table {
+        margin-top: 10%;
+        border-collapse: collapse;
+      }
+      td {
+        max-width: 250px;
+      }
+      @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.text1 {
+
+  font-family: 'Indie Flower', cursive;
+  font-color: blue;
+  font-size: 70px;
+
+}
+
+.simple-tb {
+  color: white;
+	width:200px;
+	height:35px;
+	border-radius:5px;
+  transition-property:background-color,border-radius,width,height,color;
+  transition-duration:0.215s;
+  transition-delay: 0.215s;
+  text-align:center;
+  border: none;
+  float: none;
+  border-bottom: 1px solid blue;
+  font-family: 'Raleway', sans-serif;
+  background-color:transparent;
+	}
+
+.simple-tb:hover {
+		background-color:white;
+		border-radius:15px;
+		color:black;
+		width:250px;
+		height:35px;
+	}
+    </style>
+  </head>
+  <body>
+
+    <center>
+      <div class="text1">Sentiment Analysis<hr>
+    </center>
+
+    <center>
+    <table>
+        <th>Text</th>
+        <th>Score</th>
+        <th>Result</th>
+      <tr>
+        <td>{{text}}</td>
+        <td>{{value}}</td>
+        <td>{{result}}</td>
+      </tr>
+    </table></center>
+
+  </body>
+</html>
